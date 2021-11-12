@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Resume CV - Oscar</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class=" l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Oscar</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificates
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <!-- <img src="assets/img/perfil.jpg" alt="" class="home__img"> -->
+                            <div style="margin-top: 30px;"></div>
+                            <h1 class="home__title">Oscar Romero Silva</h1>
+
+                            <h3 class="home__profession">FrontEnd Developer</h3>
+                            <!--<span id="resume-button" class="generate-pdf">Download</span>-->
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> Calle Primero de Mayo 77B, #2B, 35110 Santa Lucia
+                                de Tirajana, Las Palmas, España
+                            </span>
+
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i> oscarromerosilva92@gmail.com
+                            </span>
+
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i> (+34) 633143774
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+
+                </section>
+
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+
+                    <p class="profile__description">
+                        Computer Science Engineer & <b> FrontEnd Developer </b>.
+                        I have several years of experience in the field of work and
+                        I like to continue improving my development skills.
+                        Highly motivated and results-oriented. I want to be part of your
+                        success by offering high responsibility and quality work, I want to be useful working on what I
+                        like, learn a lot, accept and face new challenges
+                    </p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">COMPUTER SCIECE ENGINEER</h3>
+                                <span class="education__studies">Universidad de las Ciencias Inform&aacute;ticas. La
+                                    Habana - Cuba</span>
+                                <span class="education__year">2011 - 2016</span>
+                                <ul class="education__list">
+                                    <li class="education__description">
+                                        <span class="education__circle"></span>
+                                        <div>Middle Technician in Computer Science.
+                                            Polytechnic Institute of Informatics L&aacute;zaro C&aacute;rdenas del
+                                            R&iacute;o, Santa Clara, Villa Clara, Cuba.
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section hide" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> Vue
+                            <!-- <span class="skills__time">(6+ years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> NuxtJs
+                            <!-- <span class="skills__time">(5+ years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> Vuetify
+                            <!-- <span class="skills__time">(5+ years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> JavaScript
+                            <!-- <span class="skills__time">(5+ years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> HTML5
+                            <!-- <span class="skills__time">(5+ years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> TypeScript
+                            <!-- <span class="skills__time">(7+ years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> CSS
+                            <!-- <span class="skills__time">(7+ years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> GIT
+                            <!-- <span class="skills__time">(5 years)</span> -->
+                        </div>
+                        <div class="skills__name">
+                            <span class="skills__circle"></span> Scrum
+                            <!-- <span class="skills__time">(3 years)</span> -->
+                        </div>
+                    </div>
+                    <a href="#" class="skills-button" id="skills-button">See More</a>
+                </section>
+
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">FrontEnd Developer</h3>
+                                <span class="experience__company">From 2021 | PlusHolidays (<a target="_blank"
+                                        href="https://plusholidays.com">https://plusholidays.com</a>)</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            FrontEnd Developer for PlusHolidays site, aiming to reservation of villages
+                                            and other properties managed by PlusHolidays company in Spain.
+                                        </div>
+                                    </li>
+
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Development of alls responsive views, Notifications, Configurations and
+                                            other modules with total CRUD management that consumes API Rest services. It
+                                            includes the public services to show, filter and calculate rules for the
+                                            personalized search of accommodation and locations using complex filters.
+                                        </div>
+                                    </li>
+
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Fully remote work, completing assigned tasks on time requirements and
+                                            working under pressure.
+                                        </div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Daily work progress reports following the workflow set by the team using
+                                            Git/GitLab as version control, Trello to guide SCRUM process and Slack for
+                                            daily meetings.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="experience__technologies">
+                                    <span>Technologies used</span>
+                                    <ul class="experience__technologies-list">
+                                        <li class="experience__technologies-item">Vue</li>
+                                        <li class="experience__technologies-item">NuxtJs</li>
+                                        <li class="experience__technologies-item">Vuex</li>
+                                        <li class="experience__technologies-item">Axios</li>
+                                        <li class="experience__technologies-item">Nuxt/Auth</li>
+                                        <li class="experience__technologies-item">Vuetify</li>
+                                        <li class="experience__technologies-item">GitHub</li>
+                                        <li class="experience__technologies-item">i18n</li>
+                                        <li class="experience__technologies-item">Git</li>
+                                        <li class="experience__technologies-item">GitLab</li>
+                                        <li class="experience__technologies-item">Trello</li>
+                                        <li class="experience__technologies-item">Slack</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">FrontEnd Developer</h3>
+                                <span class="experience__company">From January 2021 - March 2021 | Merk&aacute;rea (<a
+                                        target="_blank" href="https://merkarea.com">https://merkarea.com</a>)</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Management system for register Markets and Commerces allowing custom
+                                            handling of business for its owners and employees. Allow to track commerce
+                                            orders and post products using custom settings for handling B2B and B2C
+                                            business models.
+                                        </div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Development of varios modules for admin Commerces, Users, Employees and
+                                            notifications that consumes API Rest services
+                                        </div>
+                                    </li>
+
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Fully remote work, completing assigned tasks on time requirements and
+                                            working under pressure.
+                                        </div>
+                                    </li>
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Daily work progress reports following the workflow set by the team using
+                                            Git/GitLab as version control, Trello to guide SCRUM process and Slack for
+                                            daily meetings.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="experience__technologies">
+                                    <span>Technologies used</span>
+                                    <ul class="experience__technologies-list">
+                                        <li class="experience__technologies-item">Vue</li>
+                                        <li class="experience__technologies-item">NuxtJs</li>
+                                        <li class="experience__technologies-item">Vuex</li>
+                                        <li class="experience__technologies-item">Axios</li>
+                                        <li class="experience__technologies-item">Nuxt/Auth</li>
+                                        <li class="experience__technologies-item">Vuetify</li>
+                                        <li class="experience__technologies-item">GitHub</li>
+                                        <li class="experience__technologies-item">Git</li>
+                                        <li class="experience__technologies-item">GitLab</li>
+                                        <li class="experience__technologies-item">Trello</li>
+                                        <li class="experience__technologies-item">Slack</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Full-Stack Developer </h3>
+                                <span class="experience__company">From 12/2019 - 01/2021 | BitingBit Campus S.L.U (<a
+                                        target="_blank" href="https://www.bitingbit.com/#/">https://www.bitingbit.com
+                                    </a>)</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Web Developer on differents web applications like LogAnalyser an internal
+                                            proyect to analyse Alexa Logs also i worked in a SyncScript web application
+                                            for a EuroSync Company on Germany i worked too anothers clients proyects and
+                                            colaborations
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="experience__technologies">
+                                    <span>Technologies used</span>
+                                    <ul class="experience__technologies-list">
+                                        <li class="experience__technologies-item">Vue</li>
+                                        <li class="experience__technologies-item">Quasar</li>
+                                        <li class="experience__technologies-item">Vuetify</li>
+                                        <li class="experience__technologies-item">Java</li>
+                                        <li class="experience__technologies-item">Spring</li>
+                                        <li class="experience__technologies-item">Quarkus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Full-Stack Developer</h3>
+                                <span class="experience__company">From 2016 to 2018 |Information Technology Defense
+                                    Company (XETID). La Habana, Cuba</span>
+                                <ul class="experience__list">
+                                    <li class="experience__description">
+                                        <span class="experience__circle"></span>
+                                        <div>
+                                            Development of computer solutions in the
+                                            3D area, modeling and animation of 3d objects, creation of 2d animated
+                                            interfaces. Among the applications worked are:
+                                            <ul>
+                                                <li>
+                                                    - Realistic Virtual Tour of the Main Meeting Room of the Central
+                                                    Bank of
+                                                    Cuba.
+                                                </li>
+                                                <li>
+                                                    - Virtual Tour of the areas of the company XETID.
+                                                </li>
+                                                <li>
+                                                    - Demonstration video of the Central Act in the “Plaza de la
+                                                    Revolución”.
+                                                </li>
+                                                <li>
+                                                    - Demonstration video of combative maneuvers of the cuban Army.
+                                                </li>
+                                                <li>
+                                                    -Suit of video games that integrate the platform of entertainment
+                                                    and
+                                                    advertising CONBOX, which consists of seven (7) video games and uses
+                                                    Kinect
+                                                    for its operation, these games are: Homeruns Derby, Penalties, Car
+                                                    race,
+                                                    Boxing
+                                                    game, Bowling game, Athletics game and Game "Dreams, dreams are"
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="experience__technologies">
+                                    <span>Technologies used</span>
+                                    <ul class="experience__technologies-list">
+                                        <li class="experience__technologies-item">Unity</li>
+                                        <li class="experience__technologies-item">Blender3D</li>
+                                        <li class="experience__technologies-item">Adobe Suits</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">Scrum Fundamentals Certified</h3>
+                            <span class="certificate__company">Jul 2021 | SCRUMstudy</span>
+                            <p class="certificate__description">
+                                Provide knowledge and skills to apply and follow best practices on SCRUM framework.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h3 class="section-title">Languages</h3>
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Spanish
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> English
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class="bx bx-run interests__icon"></i>
+                            <span class="interests__name">Workout</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-coffee interests__icon"></i>
+                            <span class="interests__name">Cofee</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrollttop__icon'></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
