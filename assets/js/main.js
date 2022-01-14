@@ -21,6 +21,7 @@ function linkAction() {
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
+
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -41,6 +42,7 @@ function scrollActive() {
         }
     })
 }
+
 window.addEventListener('scroll', scrollActive)
 
 /*==================== SHOW SCROLL TOP ====================*/
@@ -49,6 +51,7 @@ function scrollTop() {
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if (this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
+
 window.addEventListener('scroll', scrollTop)
 
 /*==================== DARK LIGHT THEME ====================*/
@@ -132,21 +135,27 @@ let resumeButton = document.getElementById('resume-button')
 
 // Html2pdf options
 let opt = {
-    margin: 1,
-    filename: 'cv-juan-gabriel-valdes',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 4 },
-    jsPDF: { format: 'a4', orientation: 'portrait' }
+    margin: 0,
+    filename: 'cv-oscar-romero-silva',
+    image: {type: 'png', quality: 0.4},
+    html2canvas: {scale: 2},
+    jsPDF: {format: 'a4', orientation: 'portrait'}
 }
 
 // Function to call areaCv and Html2Pdf options 
 function generateResume() {
-    html2pdf().set(opt).from(areaCv).save();
+    return new Promise((resolve, reject) => {
+        resolve(html2pdf().set(opt).from(areaCv).save());
+    }).then(() => {
+        removeScale()
+    })
 }
 
 // When the button is clicked, it executes the three functions
 resumeButton.addEventListener('click', () => {
+    document.getElementById("generate-pdf-overlay").style.display = "block";
     scaleCv()
-    setTimeout(generateResume, 2500)
-    setTimeout(removeScale, 2500)
+    generateResume().then(() => {
+        document.getElementById("generate-pdf-overlay").style.display = "none";
+    })
 })

@@ -68,6 +68,11 @@
 
     <main class="l-main bd-container">
         <!-- All elements within this div, is generated in PDF -->
+        <div id="generate-pdf-overlay">
+            <div class="center-content">
+                <div class="loader"></div>
+            </div>
+        </div>
         <div class="resume" id="area-cv">
             <div class="resume__left">
                 <!--========== HOME ==========-->
@@ -79,7 +84,7 @@
                             <h1 class="home__title">Oscar Romero Silva</h1>
 
                             <h3 class="home__profession">FrontEnd Developer</h3>
-                            <!--<span id="resume-button" class="generate-pdf">Download</span>-->
+                            <!--                        <span id="resume-button" class="generate-pdf">Download</span>-->
                         </div>
 
                         <div class="home__address bd-grid">
@@ -100,8 +105,16 @@
                     </div>
 
                     <!-- Theme change button -->
-                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                    <div class="change-theme">
+                        <!-- <i class="bx bx-download" title="Download" id="resume-button"></i>
 
+                        <select name="select" style=" margin-right: 15px; margin-left: 15px" title="Language">
+                            <option value="es" selected>Español</option>
+                            <option value="en">Ingles</option>
+                        </select> -->
+
+                        <i class="bx bx-start-solid " title="Theme" id="theme-button"></i>
+                    </div>
                 </section>
 
 
@@ -158,7 +171,13 @@
                     <div class="skills__content bd-grid">
                         <div class="skills__name">
                             <span class="skills__circle"></span> Vue
-                            <!-- <span class="skills__time">(6+ years)</span> -->
+                            <span class="skills__time">
+                                <i class="bx bxs-star" title="Theme"></i>
+                                <i class="bx bxs-star" title="Theme"></i>
+                                <i class="bx bxs-star" title="Theme"></i>
+                                <i class="bx bxs-star" title="Theme"></i>
+                                <i class="bx bxs-star" title="Theme"></i>
+                            </span>
                         </div>
                         <div class="skills__name">
                             <span class="skills__circle"></span> NuxtJs
@@ -212,125 +231,147 @@
 
                             <div class="experience__data bd-grid">
                                 <h3 class="experience__title">FrontEnd Developer</h3>
-                                <span class="experience__company">From 2021 | PlusHolidays (<a target="_blank"
-                                        href="https://plusholidays.com">https://plusholidays.com</a>)</span>
-                                <ul class="experience__list">
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            FrontEnd Developer for PlusHolidays site, aiming to reservation of villages
-                                            and other properties managed by PlusHolidays company in Spain.
-                                        </div>
-                                    </li>
+                                <span class="experience__company">From January January 2021 to present |
+                                    Smart&Fun</span>
 
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            Development of alls responsive views, Notifications, Configurations and
-                                            other modules with total CRUD management that consumes API Rest services. It
-                                            includes the public services to show, filter and calculate rules for the
-                                            personalized search of accommodation and locations using complex filters.
-                                        </div>
-                                    </li>
+                                <ul>
+                                    <li>
+                                        <span class="experience__company">
+                                            <span style="font-weight: bold;">
+                                                PlusHolidays
+                                            </span>
+                                            (<a target="_blank"
+                                                href="https://plusholidays.com">https://plusholidays.com</a>) </span>
+                                        <ul class="experience__list">
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    FrontEnd Developer for PlusHolidays site, aiming to reservation of
+                                                    villages
+                                                    and other properties managed by PlusHolidays company in Spain.
+                                                </div>
+                                            </li>
 
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            Fully remote work, completing assigned tasks on time requirements and
-                                            working under pressure.
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    Development of alls responsive views, Notifications, Configurations
+                                                    and
+                                                    other modules with total CRUD management that consumes API Rest
+                                                    services. It
+                                                    includes the public services to show, filter and calculate rules for
+                                                    the
+                                                    personalized search of accommodation and locations using complex
+                                                    filters.
+                                                </div>
+                                            </li>
+
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    Fully remote work, completing assigned tasks on time requirements
+                                                    and
+                                                    working under pressure.
+                                                </div>
+                                            </li>
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    Daily work progress reports following the workflow set by the team
+                                                    using
+                                                    Git/GitLab as version control, Trello to guide SCRUM process and
+                                                    Slack for
+                                                    daily meetings.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="experience__technologies">
+                                            <span>Technologies used</span>
+                                            <ul class="experience__technologies-list">
+                                                <li class="experience__technologies-item">Vue</li>
+                                                <li class="experience__technologies-item">NuxtJs</li>
+                                                <li class="experience__technologies-item">Vuex</li>
+                                                <li class="experience__technologies-item">Axios</li>
+                                                <li class="experience__technologies-item">Nuxt/Auth</li>
+                                                <li class="experience__technologies-item">Vuetify</li>
+                                                <li class="experience__technologies-item">GitHub</li>
+                                                <li class="experience__technologies-item">i18n</li>
+                                                <li class="experience__technologies-item">Git</li>
+                                                <li class="experience__technologies-item">GitLab</li>
+                                                <li class="experience__technologies-item">Trello</li>
+                                                <li class="experience__technologies-item">Slack</li>
+                                            </ul>
                                         </div>
                                     </li>
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            Daily work progress reports following the workflow set by the team using
-                                            Git/GitLab as version control, Trello to guide SCRUM process and Slack for
-                                            daily meetings.
+                                    <br />
+                                    <li>
+                                        <span class="experience__company">
+                                            <span style="font-weight: bold;">
+                                                Merk&aacute;rea
+                                            </span>
+                                            (<a target="_blank"
+                                                href="https://merkarea.com">https://merkarea.com</a>)</span>
+                                        <ul class="experience__list">
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    Management system for register Markets and Commerces allowing custom
+                                                    handling of business for its owners and employees. Allow to track
+                                                    commerce
+                                                    orders and post products using custom settings for handling B2B and
+                                                    B2C
+                                                    business models.
+                                                </div>
+                                            </li>
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    Development of varios modules for admin Commerces, Users, Employees
+                                                    and
+                                                    notifications that consumes API Rest services
+                                                </div>
+                                            </li>
+
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    Fully remote work, completing assigned tasks on time requirements
+                                                    and
+                                                    working under pressure.
+                                                </div>
+                                            </li>
+                                            <li class="experience__description">
+                                                <span class="experience__circle"></span>
+                                                <div>
+                                                    Daily work progress reports following the workflow set by the team
+                                                    using
+                                                    Git/GitLab as version control, Trello to guide SCRUM process and
+                                                    Slack for
+                                                    daily meetings.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="experience__technologies">
+                                            <span>Technologies used</span>
+                                            <ul class="experience__technologies-list">
+                                                <li class="experience__technologies-item">Vue</li>
+                                                <li class="experience__technologies-item">NuxtJs</li>
+                                                <li class="experience__technologies-item">Vuex</li>
+                                                <li class="experience__technologies-item">Axios</li>
+                                                <li class="experience__technologies-item">Nuxt/Auth</li>
+                                                <li class="experience__technologies-item">Vuetify</li>
+                                                <li class="experience__technologies-item">GitHub</li>
+                                                <li class="experience__technologies-item">Git</li>
+                                                <li class="experience__technologies-item">GitLab</li>
+                                                <li class="experience__technologies-item">Trello</li>
+                                                <li class="experience__technologies-item">Slack</li>
+                                            </ul>
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="experience__technologies">
-                                    <span>Technologies used</span>
-                                    <ul class="experience__technologies-list">
-                                        <li class="experience__technologies-item">Vue</li>
-                                        <li class="experience__technologies-item">NuxtJs</li>
-                                        <li class="experience__technologies-item">Vuex</li>
-                                        <li class="experience__technologies-item">Axios</li>
-                                        <li class="experience__technologies-item">Nuxt/Auth</li>
-                                        <li class="experience__technologies-item">Vuetify</li>
-                                        <li class="experience__technologies-item">GitHub</li>
-                                        <li class="experience__technologies-item">i18n</li>
-                                        <li class="experience__technologies-item">Git</li>
-                                        <li class="experience__technologies-item">GitLab</li>
-                                        <li class="experience__technologies-item">Trello</li>
-                                        <li class="experience__technologies-item">Slack</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
 
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
-
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">FrontEnd Developer</h3>
-                                <span class="experience__company">From January 2021 - March 2021 | Merk&aacute;rea (<a
-                                        target="_blank" href="https://merkarea.com">https://merkarea.com</a>)</span>
-                                <ul class="experience__list">
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            Management system for register Markets and Commerces allowing custom
-                                            handling of business for its owners and employees. Allow to track commerce
-                                            orders and post products using custom settings for handling B2B and B2C
-                                            business models.
-                                        </div>
-                                    </li>
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            Development of varios modules for admin Commerces, Users, Employees and
-                                            notifications that consumes API Rest services
-                                        </div>
-                                    </li>
-
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            Fully remote work, completing assigned tasks on time requirements and
-                                            working under pressure.
-                                        </div>
-                                    </li>
-                                    <li class="experience__description">
-                                        <span class="experience__circle"></span>
-                                        <div>
-                                            Daily work progress reports following the workflow set by the team using
-                                            Git/GitLab as version control, Trello to guide SCRUM process and Slack for
-                                            daily meetings.
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="experience__technologies">
-                                    <span>Technologies used</span>
-                                    <ul class="experience__technologies-list">
-                                        <li class="experience__technologies-item">Vue</li>
-                                        <li class="experience__technologies-item">NuxtJs</li>
-                                        <li class="experience__technologies-item">Vuex</li>
-                                        <li class="experience__technologies-item">Axios</li>
-                                        <li class="experience__technologies-item">Nuxt/Auth</li>
-                                        <li class="experience__technologies-item">Vuetify</li>
-                                        <li class="experience__technologies-item">GitHub</li>
-                                        <li class="experience__technologies-item">Git</li>
-                                        <li class="experience__technologies-item">GitLab</li>
-                                        <li class="experience__technologies-item">Trello</li>
-                                        <li class="experience__technologies-item">Slack</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="experience__content">
                             <div class="experience__time">
@@ -426,7 +467,6 @@
                             </div>
 
                         </div>
-
 
 
                     </div>
