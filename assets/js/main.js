@@ -90,18 +90,18 @@ const skillsButton = document.getElementById('skills-button')
 const skillsSection = document.getElementById('skills');
 const skillsItems = document.querySelectorAll('.skills__name.showmore');
 
-skillsButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (skillsSection.classList.contains("show"))
-        skillsButton.innerText = "See More"
-    else skillsButton.innerText = "See Less"
-    skillsSection.classList.toggle('show');
-    skillsSection.classList.toggle('hide');
-    skillsItems.forEach(item => {
-        item.classList.toggle('hide')
-        item.classList.toggle('show')
-    })
-})
+// skillsButton.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     if (skillsSection.classList.contains("show"))
+//         skillsButton.innerText = "See More"
+//     else skillsButton.innerText = "See Less"
+//     skillsSection.classList.toggle('show');
+//     skillsSection.classList.toggle('hide');
+//     skillsItems.forEach(item => {
+//         item.classList.toggle('hide')
+//         item.classList.toggle('show')
+//     })
+// })
 
 //Education Awards
 /*const educationAwardButton = document.getElementById('icpc__award-button')
@@ -131,15 +131,15 @@ function removeScale() {
 /*==================== GENERATE PDF ====================*/
 // PDF generated area
 let areaCv = document.getElementById('area-cv')
-let resumeButton = document.getElementById('resume-button')
+// let resumeButton = document.getElementById('resume-button')
 
 // Html2pdf options
 let opt = {
     margin: 0,
     filename: 'cv-oscar-romero-silva',
-    image: {type: 'png', quality: 0.4},
-    html2canvas: {scale: 2},
-    jsPDF: {format: 'a4', orientation: 'portrait'}
+    image: { type: 'png', quality: 0.4 },
+    html2canvas: { scale: 2 },
+    jsPDF: { format: 'a4', orientation: 'portrait' }
 }
 
 // Function to call areaCv and Html2Pdf options 
@@ -152,10 +152,10 @@ function generateResume() {
 }
 
 // When the button is clicked, it executes the three functions
-resumeButton.addEventListener('click', () => {
-    document.getElementById("generate-pdf-overlay").style.display = "block";
-    scaleCv()
-    generateResume().then(() => {
-        document.getElementById("generate-pdf-overlay").style.display = "none";
-    })
-})
+// resumeButton.addEventListener('click', () => {
+//     document.getElementById("generate-pdf-overlay").style.display = "block";
+//     scaleCv()
+//     generateResume().then(() => {
+//         document.getElementById("generate-pdf-overlay").style.display = "none";
+//     })
+// })

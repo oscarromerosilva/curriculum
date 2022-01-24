@@ -11,50 +11,58 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Resume CV - Oscar</title>
+    <title id="translate" lang="title">Resume CV - Oscar Romero Silva</title>
 </head>
 
 <body>
+
+
     <!--========== HEADER ==========-->
     <header class=" l-header" id="header">
         <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Oscar</a>
+            <a href="#" class="nav__logo">Oscar Romero Silva</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#home" class="nav__link">
-                            <i class='bx bx-home nav__icon'></i>Home
+                            <i class='bx bx-home nav__icon'></i>
+                            <p id="translate" lang="home">Home</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#profile" class="nav__link">
-                            <i class='bx bx-user nav__icon'></i>Profile
+                            <i class='bx bx-user nav__icon'></i>
+                            <p id="translate" lang="profileHome">Profile</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#education" class="nav__link">
-                            <i class='bx bx-book nav__icon'></i>Education
+                            <i class='bx bx-book nav__icon'></i>
+                            <p id="translate" lang="profileEducation">Education</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class='bx bx-receipt nav__icon'></i>Skills
+                            <i class='bx bx-receipt nav__icon'></i>
+                            <p id="translate" lang="profileSkills">Skills</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#experience" class="nav__link">
-                            <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <p id="translate" lang="profileExperience">Experience</p>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#certificates" class="nav__link">
-                            <i class='bx bx-award nav__icon'></i>Certificates
+                            <i class='bx bx-award nav__icon'></i>
+                            <p id="translate" lang="profileCertificates">Certificates</p>
                         </a>
                     </li>
                 </ul>
@@ -83,8 +91,7 @@
                             <div style="margin-top: 30px;"></div>
                             <h1 class="home__title">Oscar Romero Silva</h1>
 
-                            <h3 class="home__profession">FrontEnd Developer</h3>
-                            <!--                        <span id="resume-button" class="generate-pdf">Download</span>-->
+                            <h3 class="home__profession" id="translate" lang="profession">FrontEnd Web Developer</h3>
                         </div>
 
                         <div class="home__address bd-grid">
@@ -106,35 +113,36 @@
 
                     <!-- Theme change button -->
                     <div class="change-theme">
-                        <!-- <i class="bx bx-download" title="Download" id="resume-button"></i>
-
-                        <select name="select" style=" margin-right: 15px; margin-left: 15px" title="Language">
-                            <option value="es" selected>Español</option>
-                            <option value="en">Ingles</option>
-                        </select> -->
-
+                        <!-- <i class="bx bx-download" title="Download" id="resume-button"></i> -->
+                        <select name="select" style=" margin-right: 15px; margin-left: 15px" title="Language"
+                            onchange="changeLanguage(value)" id='language-selector'>
+                            <option value="en" id="translate" lang="english">English</option>
+                            <option value="es" id="translate" lang="spanish">Spanish</option>
+                        </select>
+                        <i class="bx bx-moon" title="Theme" id="theme-button"></i>
                     </div>
-                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
                 </section>
 
 
                 <!--========== PROFILE ==========-->
                 <section class="profile section" id="profile">
-                    <h2 class="section-title">Profile</h2>
 
-                    <p class="profile__description">
-                        Computer Science Engineer & <b> FrontEnd Developer </b>.
+                    <h2 class="section-title" id="translate" lang='profileTitle'>Profile</h2>
+
+                    <p class="profile__description" id="translate" lang='profileDescription'>
+                        Computer Science Engineer & FrontEnd Web Developer.
                         I have several years of experience in the field of work and
                         I like to continue improving my development skills.
                         Highly motivated and results-oriented. I want to be part of your
-                        success by offering high responsibility and quality work, I want to be useful working on what I
+                        success by offering high responsibility and quality work, I want to be useful working on
+                        what I
                         like, learn a lot, accept and face new challenges
                     </p>
                 </section>
 
                 <!--========== EDUCATION ==========-->
                 <section class="education section" id="education">
-                    <h2 class="section-title">Education</h2>
+                    <h2 class="section-title" id="translate" lang='profileEducation'>Education</h2>
 
                     <div class="education__container bd-grid">
                         <div class="education__content">
@@ -144,19 +152,26 @@
                             </div>
 
                             <div class="education__data bd-grid">
-                                <h3 class="education__title">COMPUTER SCIECE ENGINEER</h3>
+                                <h3 class="education__title" id="translate" lang="educationTitle1">Computer Science
+                                    Engineer</h3>
                                 <span class="education__studies">Universidad de las Ciencias Inform&aacute;ticas. La
                                     Habana - Cuba</span>
                                 <span class="education__year">2011 - 2016</span>
-                                <ul class="education__list">
-                                    <li class="education__description">
-                                        <span class="education__circle"></span>
-                                        <div>Middle Technician in Computer Science.
-                                            Polytechnic Institute of Informatics L&aacute;zaro C&aacute;rdenas del
-                                            R&iacute;o, Santa Clara, Villa Clara, Cuba.
-                                        </div>
-                                    </li>
-                                </ul>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title" id="translate" lang="educationTitle2">Middle Technician in
+                                    Computer Science</h3>
+                                <span class="education__studies">Instituto Polit&eacute;cnico de Inform&aacute;ticas.
+                                    L&aacute;zaro
+                                    C&aacute;rdenas del
+                                    R&iacute;o, Santa Clara, Villa Clara, Cuba.</span>
+                                <span class="education__year">2007 - 2010</span>
                             </div>
                         </div>
 
@@ -166,18 +181,18 @@
 
                 <!--========== SKILLS  ==========-->
                 <section class="skills section hide" id="skills">
-                    <h2 class="section-title">Skills</h2>
+                    <h2 class="section-title" id="translate" lang="profileSkills">Skills</h2>
 
                     <div class="skills__content bd-grid">
                         <div class="skills__name">
                             <span class="skills__circle"></span> Vue
-                            <span class="skills__time">
+                            <!-- <span class="skills__time">
                                 <i class="bx bxs-star" title="Theme"></i>
                                 <i class="bx bxs-star" title="Theme"></i>
                                 <i class="bx bxs-star" title="Theme"></i>
                                 <i class="bx bxs-star" title="Theme"></i>
                                 <i class="bx bxs-star" title="Theme"></i>
-                            </span>
+                            </span> -->
                         </div>
                         <div class="skills__name">
                             <span class="skills__circle"></span> NuxtJs
@@ -212,7 +227,7 @@
                             <!-- <span class="skills__time">(3 years)</span> -->
                         </div>
                     </div>
-                    <a href="#" class="skills-button" id="skills-button">See More</a>
+                    <!-- <a href="#" class="skills-button" id="skills-button" lang="seeMore">See More</a> -->
                 </section>
 
             </div>
@@ -220,7 +235,7 @@
             <div class="resume__right">
                 <!--========== EXPERIENCE ==========-->
                 <section class="experience section" id="experience">
-                    <h2 class="section-title">Experience</h2>
+                    <h2 class="section-title" id="translate" lang="profileExperience">Experience</h2>
 
                     <div class="experience__container bd-grid">
                         <div class="experience__content">
@@ -230,10 +245,11 @@
                             </div>
 
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">FrontEnd Developer</h3>
-                                <span class="experience__company">From January January 2021 to present |
-                                    Smart&Fun</span>
-
+                                <h3 class="experience__title" id="translate" lang="profession">FrontEnd Developer</h3>
+                                <span class="experience__company" id="translate" lang="duration1">From January 2021 to
+                                    present |
+                                    Smart&Fun
+                                </span>
                                 <ul>
                                     <li>
                                         <span class="experience__company">
@@ -245,16 +261,15 @@
                                         <ul class="experience__list">
                                             <li class="experience__description">
                                                 <span class="experience__circle"></span>
-                                                <div>
-                                                    FrontEnd Developer for PlusHolidays site, aiming to reservation of
-                                                    villages
-                                                    and other properties managed by PlusHolidays company in Spain.
+                                                <div id="translate" lang='descriptionJob1'>
+                                                    FrontEnd Developer for PlusHolidays site, aiming to reservation
+                                                    properties managed by PlusHolidays company in Spain.
                                                 </div>
                                             </li>
 
                                             <li class="experience__description">
                                                 <span class="experience__circle"></span>
-                                                <div>
+                                                <div id="translate" lang="descriptionJob2">
                                                     Development of alls responsive views, Notifications, Configurations
                                                     and
                                                     other modules with total CRUD management that consumes API Rest
@@ -265,18 +280,9 @@
                                                     filters.
                                                 </div>
                                             </li>
-
                                             <li class="experience__description">
                                                 <span class="experience__circle"></span>
-                                                <div>
-                                                    Fully remote work, completing assigned tasks on time requirements
-                                                    and
-                                                    working under pressure.
-                                                </div>
-                                            </li>
-                                            <li class="experience__description">
-                                                <span class="experience__circle"></span>
-                                                <div>
+                                                <div id="translate" lang="descriptionJob4">
                                                     Daily work progress reports following the workflow set by the team
                                                     using
                                                     Git/GitLab as version control, Trello to guide SCRUM process and
@@ -286,7 +292,7 @@
                                             </li>
                                         </ul>
                                         <div class="experience__technologies">
-                                            <span>Technologies used</span>
+                                            <span id="translate" lang="techUsed">Technologies used</span>
                                             <ul class="experience__technologies-list">
                                                 <li class="experience__technologies-item">Vue</li>
                                                 <li class="experience__technologies-item">NuxtJs</li>
@@ -314,7 +320,7 @@
                                         <ul class="experience__list">
                                             <li class="experience__description">
                                                 <span class="experience__circle"></span>
-                                                <div>
+                                                <div id="translate" lang="descriptionJob5">
                                                     Management system for register Markets and Commerces allowing custom
                                                     handling of business for its owners and employees. Allow to track
                                                     commerce
@@ -325,24 +331,15 @@
                                             </li>
                                             <li class="experience__description">
                                                 <span class="experience__circle"></span>
-                                                <div>
+                                                <div id="translate" lang="descriptionJob6">
                                                     Development of varios modules for admin Commerces, Users, Employees
                                                     and
                                                     notifications that consumes API Rest services
                                                 </div>
                                             </li>
-
                                             <li class="experience__description">
                                                 <span class="experience__circle"></span>
-                                                <div>
-                                                    Fully remote work, completing assigned tasks on time requirements
-                                                    and
-                                                    working under pressure.
-                                                </div>
-                                            </li>
-                                            <li class="experience__description">
-                                                <span class="experience__circle"></span>
-                                                <div>
+                                                <div id="translate" lang="descriptionJob4">
                                                     Daily work progress reports following the workflow set by the team
                                                     using
                                                     Git/GitLab as version control, Trello to guide SCRUM process and
@@ -352,7 +349,7 @@
                                             </li>
                                         </ul>
                                         <div class="experience__technologies">
-                                            <span>Technologies used</span>
+                                            <span id="translate" lang="techUsed">Technologies used</span>
                                             <ul class="experience__technologies-list">
                                                 <li class="experience__technologies-item">Vue</li>
                                                 <li class="experience__technologies-item">NuxtJs</li>
@@ -380,23 +377,28 @@
                             </div>
 
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Full-Stack Developer </h3>
-                                <span class="experience__company">From 12/2019 - 01/2021 | BitingBit Campus S.L.U (<a
-                                        target="_blank" href="https://www.bitingbit.com/#/">https://www.bitingbit.com
-                                    </a>)</span>
+                                <h3 class="experience__title" id="translate" lang="fullStack">Full-Stack Developer </h3>
+                                <span class="experience__company">
+                                    <span id="translate" lang="duration2">
+                                        From 12/2019 - 01/2021
+                                        | BitingBit Campus S.L.U
+                                    </span> (<a target="_blank"
+                                        href="https://www.bitingbit.com/#/">https://www.bitingbit.com
+                                    </a>)
+                                </span>
                                 <ul class="experience__list">
                                     <li class="experience__description">
                                         <span class="experience__circle"></span>
-                                        <div>
-                                            Web Developer on differents web applications like LogAnalyser an internal
-                                            proyect to analyse Alexa Logs also i worked in a SyncScript web application
-                                            for a EuroSync Company on Germany i worked too anothers clients proyects and
-                                            colaborations
+                                        <div id="translate" lang="descriptionJob7">
+                                            Web developer on different web applications like LogAnalyser, an internal
+                                            project to analyze Alexa logs. I also worked on a SyncScript web application
+                                            for a EuroSync company in Germany. I also worked on projects and
+                                            collaborations for other clients.
                                         </div>
                                     </li>
                                 </ul>
                                 <div class="experience__technologies">
-                                    <span>Technologies used</span>
+                                    <span id="translate" lang="techUsed">Technologies used</span>
                                     <ul class="experience__technologies-list">
                                         <li class="experience__technologies-item">Vue</li>
                                         <li class="experience__technologies-item">Quasar</li>
@@ -416,34 +418,35 @@
                             </div>
 
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Full-Stack Developer</h3>
-                                <span class="experience__company">From 2016 to 2018 |Information Technology Defense
+                                <h3 class="experience__title" id="translate" lang="fullStack">Full-Stack Developer</h3>
+                                <span class="experience__company" id="translate" lang="duration3">From 2016 to 2018
+                                    |Information Technology Defense
                                     Company (XETID). La Habana, Cuba</span>
                                 <ul class="experience__list">
                                     <li class="experience__description">
                                         <span class="experience__circle"></span>
-                                        <div>
+                                        <div id="translate" lang="descriptionJob8">
                                             Development of computer solutions in the
                                             3D area, modeling and animation of 3d objects, creation of 2d animated
                                             interfaces. Among the applications worked are:
                                             <ul>
-                                                <li>
+                                                <li id="translate" lang="subDescriptionJob1">
                                                     - Realistic Virtual Tour of the Main Meeting Room of the Central
                                                     Bank of
                                                     Cuba.
                                                 </li>
-                                                <li>
+                                                <li id="translate" lang="subDescriptionJob2">
                                                     - Virtual Tour of the areas of the company XETID.
                                                 </li>
-                                                <li>
+                                                <li id="translate" lang="subDescriptionJob3">
                                                     - Demonstration video of the Central Act in the “Plaza de la
                                                     Revolución”.
                                                 </li>
-                                                <li>
+                                                <li id="translate" lang="subDescriptionJob4">
                                                     - Demonstration video of combative maneuvers of the cuban Army.
                                                 </li>
-                                                <li>
-                                                    -Suit of video games that integrate the platform of entertainment
+                                                <li id="translate" lang="subDescriptionJob5">
+                                                    - Suit of video games that integrate the platform of entertainment
                                                     and
                                                     advertising CONBOX, which consists of seven (7) video games and uses
                                                     Kinect
@@ -457,7 +460,7 @@
                                     </li>
                                 </ul>
                                 <div class="experience__technologies">
-                                    <span>Technologies used</span>
+                                    <span id="translate" lang="techUsed">Technologies used</span>
                                     <ul class="experience__technologies-list">
                                         <li class="experience__technologies-item">Unity</li>
                                         <li class="experience__technologies-item">Blender3D</li>
@@ -467,20 +470,19 @@
                             </div>
 
                         </div>
-
-
                     </div>
                 </section>
 
                 <!--========== CERTIFICATES ==========-->
                 <section class="certificate section" id="certificates">
-                    <h2 class="section-title">Certificates</h2>
+                    <h2 class="section-title" id="translate" lang="profileCertificates">Certificates</h2>
 
                     <div class="certificate__container bd-grid">
                         <div class="certificate__content bd-grid">
-                            <h3 class="certificate__title">Scrum Fundamentals Certified</h3>
+                            <h3 class="certificate__title" id="translate" lang="certificate1">Scrum Fundamentals
+                                Certified</h3>
                             <span class="certificate__company">Jul 2021 | SCRUMstudy</span>
-                            <p class="certificate__description">
+                            <p class="certificate__description" id="translate" lang="certificateDescription1">
                                 Provide knowledge and skills to apply and follow best practices on SCRUM framework.
                             </p>
                         </div>
@@ -489,13 +491,13 @@
 
                 <!--========== LANGUAGES ==========-->
                 <section class="languages section">
-                    <h3 class="section-title">Languages</h3>
+                    <h3 class="section-title" id="translate" lang="idiomas">Languages</h3>
                     <div class="languages__container">
                         <ul class="languages__content bd-grid">
-                            <li class="languages__name">
+                            <li class="languages__name" id="translate" lang="spanish">
                                 <span class="languages__circle"></span> Spanish
                             </li>
-                            <li class="languages__name">
+                            <li class="languages__name" id="translate" lang="english">
                                 <span class="languages__circle"></span> English
                             </li>
                         </ul>
@@ -504,26 +506,26 @@
 
                 <!--========== INTERESTS ==========-->
                 <section class="interests section">
-                    <h2 class="section-title">Interests</h2>
+                    <h2 class="section-title" id="translate" lang="interest">Interests</h2>
 
                     <div class="interests__container bd-grid">
                         <div class="interests__content">
                             <i class="bx bx-headphone interests__icon"></i>
-                            <span class="interests__name">Music</span>
+                            <span class="interests__name" id="translate" lang="music">Music</span>
                         </div>
                         <div class="interests__content">
                             <i class="bx bx-run interests__icon"></i>
-                            <span class="interests__name">Workout</span>
+                            <span class="interests__name" id="translate" lang="workout">Workout</span>
                         </div>
 
                         <div class="interests__content">
                             <i class="bx bx-coffee interests__icon"></i>
-                            <span class="interests__name">Cofee</span>
+                            <span class="interests__name" id="translate" lang="cofee">Cofee</span>
                         </div>
 
                         <div class="interests__content">
                             <i class="bx bxs-plane-alt interests__icon"></i>
-                            <span class="interests__name">Travel</span>
+                            <span class="interests__name" id="translate" lang="travel">Travel</span>
                         </div>
                     </div>
                 </section>
@@ -539,8 +541,14 @@
     <!--========== HTML2PDF ==========-->
     <script src="assets/js/html2pdf.bundle.min.js"></script>
 
+    <!--========== TRANSLATIONS ==========-->
+    <script src="assets/js/lang.js"></script>
+
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
+
+
+
 </body>
 
 </html>
