@@ -60,6 +60,16 @@ var language = {
     workout: "Ejercicio",
     cofee: "Café",
     travel: "Viajar",
+    descriptionContratacion:
+      "Plataforma de Contratación con toda la información y servicios relacionados con la contratación pública en la Comunidad Autónoma de Aragón.",
+    descriptionTurismo:
+      "Página turística oficial del Ayuntamiento de Madrid, con toda la información para disfrutar al máximo de tu visita a nuestra ciudad.",
+    descriptionFCL:
+      "Aplicación para el desarrollo de paquetes que pueden ser reutilizado/compartidos en todos los proyectos de la empresa. He trabajado en los paquetes de AppHeader y Announcements con ReactJS.",
+    descriptionOnlyUI: "Librería de componentes en ReactJs",
+    descriptionOnlyfy:
+      "Desde la búsqueda hasta la contratación de nuevos empleados. Todo el proceso de contratación en una sola solución.",
+    lastDuration: "De Abril del 2022 - actualidad | Hiberus",
   },
 };
 function changeLanguage(lang) {
